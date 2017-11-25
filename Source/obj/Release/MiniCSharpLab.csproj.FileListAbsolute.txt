@@ -1,0 +1,12 @@
+D:\Downloads\minicsharplab-80132\Source\bin\Release\ILMerge.exe
+D:\Downloads\minicsharplab-80132\Source\bin\Release\MiniCSharpLab.exe.config
+D:\Downloads\minicsharplab-80132\Source\bin\Release\MiniCSharpLab.exe
+D:\Downloads\minicsharplab-80132\Source\bin\Release\MiniCSharpLab.pdb
+D:\Downloads\minicsharplab-80132\Source\bin\Release\ICSharpCode.TextEditor.dll
+D:\Downloads\minicsharplab-80132\Source\obj\Release\MiniCSharpLab.Form1.resources
+D:\Downloads\minicsharplab-80132\Source\obj\Release\MiniCSharpLab.Properties.Resources.resources
+D:\Downloads\minicsharplab-80132\Source\obj\Release\MiniCSharpLab.FormatCodeHtml.resources
+D:\Downloads\minicsharplab-80132\Source\obj\Release\MiniCSharpLab.csproj.GenerateResource.Cache
+D:\Downloads\minicsharplab-80132\Source\obj\Release\MiniCSharpLab.csproj.CoreCompileInputs.cache
+D:\Downloads\minicsharplab-80132\Source\obj\Release\MiniCSharpLab.exe
+D:\Downloads\minicsharplab-80132\Source\obj\Release\MiniCSharpLab.pdb
