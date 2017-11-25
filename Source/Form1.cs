@@ -83,7 +83,7 @@ namespace MiniCSharpLab
         private TextWriter origConOut = Console.Out;
         private const int SPLIT_WIDTH = 50;
 
-        private string[] DotVersionList = new string[] { "v2.0", "v3.5", "v4.0" };
+        private string[] DotVersionList = new string[] { "v3.5", "v4.0" };
 
         #endregion
 
@@ -117,7 +117,7 @@ namespace MiniCSharpLab
             for (int i = 0; i < DotVersionList.Length; i++)
                 cbDotNetVersionList.Items.Add(new wfListItem(".NET " + DotVersionList[i], DotVersionList[i]));
             //Default to .NET Compiler 4.0.*
-            cbDotNetVersionList.SelectedIndex = 2;
+            cbDotNetVersionList.SelectedIndex = 1;
 
             rtbCode.Document.DocumentChanged += new ICSharpCode.TextEditor.Document.DocumentEventHandler(Document_DocumentChanged);
             btnRedo.Enabled = false;
