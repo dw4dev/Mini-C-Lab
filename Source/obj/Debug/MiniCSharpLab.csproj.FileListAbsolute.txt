@@ -10,3 +10,14 @@ D:\Downloads\minicsharplab-80132\Source\obj\Debug\MiniCSharpLab.csproj.GenerateR
 D:\Downloads\minicsharplab-80132\Source\obj\Debug\MiniCSharpLab.csproj.CoreCompileInputs.cache
 D:\Downloads\minicsharplab-80132\Source\obj\Debug\MiniCSharpLab.exe
 D:\Downloads\minicsharplab-80132\Source\obj\Debug\MiniCSharpLab.pdb
+D:\001_DevTools\MiniCSharpLab\Source\bin\Debug\MiniCSharpLab.exe.config
+D:\001_DevTools\MiniCSharpLab\Source\bin\Debug\MiniCSharpLab.exe
+D:\001_DevTools\MiniCSharpLab\Source\bin\Debug\MiniCSharpLab.pdb
+D:\001_DevTools\MiniCSharpLab\Source\bin\Debug\ICSharpCode.TextEditor.dll
+D:\001_DevTools\MiniCSharpLab\Source\obj\Debug\MiniCSharpLab.Form1.resources
+D:\001_DevTools\MiniCSharpLab\Source\obj\Debug\MiniCSharpLab.Properties.Resources.resources
+D:\001_DevTools\MiniCSharpLab\Source\obj\Debug\MiniCSharpLab.FormatCodeHtml.resources
+D:\001_DevTools\MiniCSharpLab\Source\obj\Debug\MiniCSharpLab.csproj.GenerateResource.Cache
+D:\001_DevTools\MiniCSharpLab\Source\obj\Debug\MiniCSharpLab.csproj.CoreCompileInputs.cache
+D:\001_DevTools\MiniCSharpLab\Source\obj\Debug\MiniCSharpLab.exe
+D:\001_DevTools\MiniCSharpLab\Source\obj\Debug\MiniCSharpLab.pdb

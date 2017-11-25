@@ -43,8 +43,6 @@
             this.rbVB = new System.Windows.Forms.RadioButton();
             this.rbCS = new System.Windows.Forms.RadioButton();
             this.label2 = new System.Windows.Forms.Label();
-            this.rbNET35 = new System.Windows.Forms.RadioButton();
-            this.rbNET20 = new System.Windows.Forms.RadioButton();
             this.label1 = new System.Windows.Forms.Label();
             this.btnStop = new System.Windows.Forms.Button();
             this.btnRun = new System.Windows.Forms.Button();
@@ -83,6 +81,8 @@
             this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
             this.btnCopyAsHtml = new System.Windows.Forms.ToolStripButton();
             this.tmrExecTimeout = new System.Windows.Forms.Timer(this.components);
+            this.cbDotNetVersionList = new System.Windows.Forms.ComboBox();
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
@@ -114,17 +114,16 @@
             // 
             // splitContainer1.Panel2
             // 
+            this.splitContainer1.Panel2.Controls.Add(this.cbDotNetVersionList);
             this.splitContainer1.Panel2.Controls.Add(this.panel1);
             this.splitContainer1.Panel2.Controls.Add(this.label2);
-            this.splitContainer1.Panel2.Controls.Add(this.rbNET35);
-            this.splitContainer1.Panel2.Controls.Add(this.rbNET20);
             this.splitContainer1.Panel2.Controls.Add(this.label1);
             this.splitContainer1.Panel2.Controls.Add(this.btnStop);
             this.splitContainer1.Panel2.Controls.Add(this.btnRun);
             this.splitContainer1.Panel2.Controls.Add(this.groupBox2);
             this.splitContainer1.Panel2MinSize = 100;
             this.splitContainer1.Size = new System.Drawing.Size(632, 450);
-            this.splitContainer1.SplitterDistance = 215;
+            this.splitContainer1.SplitterDistance = 214;
             this.splitContainer1.SplitterWidth = 5;
             this.splitContainer1.TabIndex = 1;
             // 
@@ -135,22 +134,22 @@
             this.gbCode.Location = new System.Drawing.Point(0, 0);
             this.gbCode.Margin = new System.Windows.Forms.Padding(5);
             this.gbCode.Name = "gbCode";
-            this.gbCode.Size = new System.Drawing.Size(630, 213);
+            this.gbCode.Size = new System.Drawing.Size(630, 212);
             this.gbCode.TabIndex = 3;
             this.gbCode.TabStop = false;
             this.gbCode.Text = "C# Code";
             // 
             // rtbCode
             // 
-            this.rtbCode.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.rtbCode.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.rtbCode.ContextMenuStrip = this.codeContextMenuStrip;
             this.rtbCode.ConvertTabsToSpaces = true;
             this.rtbCode.IsReadOnly = false;
             this.rtbCode.Location = new System.Drawing.Point(10, 18);
             this.rtbCode.Name = "rtbCode";
-            this.rtbCode.Size = new System.Drawing.Size(609, 185);
+            this.rtbCode.Size = new System.Drawing.Size(609, 184);
             this.rtbCode.TabIndex = 1;
             // 
             // codeContextMenuStrip
@@ -162,13 +161,13 @@
             this.toolStripMenuItem2,
             this.copyAsToolStripMenuItem});
             this.codeContextMenuStrip.Name = "codeContextMenuStrip";
-            this.codeContextMenuStrip.Size = new System.Drawing.Size(139, 98);
+            this.codeContextMenuStrip.Size = new System.Drawing.Size(151, 98);
             // 
             // cutToolStripMenuItem
             // 
             this.cutToolStripMenuItem.Image = global::MiniCSharpLab.Properties.Resources.CutHS;
             this.cutToolStripMenuItem.Name = "cutToolStripMenuItem";
-            this.cutToolStripMenuItem.Size = new System.Drawing.Size(138, 22);
+            this.cutToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
             this.cutToolStripMenuItem.Text = "Cut";
             this.cutToolStripMenuItem.Click += new System.EventHandler(this.cutToolStripButton_Click);
             // 
@@ -176,7 +175,7 @@
             // 
             this.copyToolStripMenuItem.Image = global::MiniCSharpLab.Properties.Resources.CopyHS;
             this.copyToolStripMenuItem.Name = "copyToolStripMenuItem";
-            this.copyToolStripMenuItem.Size = new System.Drawing.Size(138, 22);
+            this.copyToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
             this.copyToolStripMenuItem.Text = "Copy";
             this.copyToolStripMenuItem.Click += new System.EventHandler(this.copyToolStripButton_Click);
             // 
@@ -184,20 +183,20 @@
             // 
             this.pastToolStripMenuItem.Image = global::MiniCSharpLab.Properties.Resources.PasteHS;
             this.pastToolStripMenuItem.Name = "pastToolStripMenuItem";
-            this.pastToolStripMenuItem.Size = new System.Drawing.Size(138, 22);
+            this.pastToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
             this.pastToolStripMenuItem.Text = "Past";
             this.pastToolStripMenuItem.Click += new System.EventHandler(this.pasteToolStripButton_Click);
             // 
             // toolStripMenuItem2
             // 
             this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(135, 6);
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(147, 6);
             // 
             // copyAsToolStripMenuItem
             // 
             this.copyAsToolStripMenuItem.Image = global::MiniCSharpLab.Properties.Resources.HTMLPageHS;
             this.copyAsToolStripMenuItem.Name = "copyAsToolStripMenuItem";
-            this.copyAsToolStripMenuItem.Size = new System.Drawing.Size(138, 22);
+            this.copyAsToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
             this.copyAsToolStripMenuItem.Text = "Copy As Html";
             this.copyAsToolStripMenuItem.Click += new System.EventHandler(this.copyAsToolStripMenuItem_Click);
             // 
@@ -244,30 +243,6 @@
             this.label2.TabIndex = 8;
             this.label2.Text = "Language:";
             // 
-            // rbNET35
-            // 
-            this.rbNET35.AutoSize = true;
-            this.rbNET35.Location = new System.Drawing.Point(314, 10);
-            this.rbNET35.Name = "rbNET35";
-            this.rbNET35.Size = new System.Drawing.Size(74, 18);
-            this.rbNET35.TabIndex = 7;
-            this.rbNET35.Text = ".NET 3.5";
-            this.rbNET35.UseVisualStyleBackColor = true;
-            this.rbNET35.CheckedChanged += new System.EventHandler(this.rbNET35_CheckedChanged);
-            // 
-            // rbNET20
-            // 
-            this.rbNET20.AutoSize = true;
-            this.rbNET20.Checked = true;
-            this.rbNET20.Location = new System.Drawing.Point(243, 10);
-            this.rbNET20.Name = "rbNET20";
-            this.rbNET20.Size = new System.Drawing.Size(74, 18);
-            this.rbNET20.TabIndex = 6;
-            this.rbNET20.TabStop = true;
-            this.rbNET20.Text = ".NET 2.0";
-            this.rbNET20.UseVisualStyleBackColor = true;
-            this.rbNET20.CheckedChanged += new System.EventHandler(this.rbNET20_CheckedChanged);
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -309,26 +284,26 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox2.Controls.Add(this.rtbOutput);
             this.groupBox2.Location = new System.Drawing.Point(12, 35);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(606, 186);
+            this.groupBox2.Size = new System.Drawing.Size(606, 187);
             this.groupBox2.TabIndex = 0;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Output";
             // 
             // rtbOutput
             // 
-            this.rtbOutput.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.rtbOutput.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.rtbOutput.Location = new System.Drawing.Point(6, 21);
             this.rtbOutput.Name = "rtbOutput";
             this.rtbOutput.ReadOnly = true;
-            this.rtbOutput.Size = new System.Drawing.Size(594, 159);
+            this.rtbOutput.Size = new System.Drawing.Size(594, 160);
             this.rtbOutput.TabIndex = 1;
             this.rtbOutput.Text = "";
             // 
@@ -355,14 +330,14 @@
             this.mnuExit});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
             this.fileToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.N)));
-            this.fileToolStripMenuItem.Size = new System.Drawing.Size(35, 20);
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(38, 20);
             this.fileToolStripMenuItem.Text = "&File";
             // 
             // mnuNew
             // 
             this.mnuNew.Name = "mnuNew";
             this.mnuNew.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.N)));
-            this.mnuNew.Size = new System.Drawing.Size(140, 22);
+            this.mnuNew.Size = new System.Drawing.Size(151, 22);
             this.mnuNew.Text = "&New";
             this.mnuNew.Click += new System.EventHandler(this.mnuNew_Click);
             // 
@@ -370,7 +345,7 @@
             // 
             this.mnuOpen.Name = "mnuOpen";
             this.mnuOpen.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O)));
-            this.mnuOpen.Size = new System.Drawing.Size(140, 22);
+            this.mnuOpen.Size = new System.Drawing.Size(151, 22);
             this.mnuOpen.Text = "&Open";
             this.mnuOpen.Click += new System.EventHandler(this.mnuOpen_Click);
             // 
@@ -378,27 +353,27 @@
             // 
             this.mnuSave.Name = "mnuSave";
             this.mnuSave.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.S)));
-            this.mnuSave.Size = new System.Drawing.Size(140, 22);
+            this.mnuSave.Size = new System.Drawing.Size(151, 22);
             this.mnuSave.Text = "&Save";
             this.mnuSave.Click += new System.EventHandler(this.mnuSave_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(137, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(148, 6);
             // 
             // mnuExit
             // 
             this.mnuExit.Name = "mnuExit";
             this.mnuExit.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.F4)));
-            this.mnuExit.Size = new System.Drawing.Size(140, 22);
+            this.mnuExit.Size = new System.Drawing.Size(151, 22);
             this.mnuExit.Text = "E&xit";
             this.mnuExit.Click += new System.EventHandler(this.mnuExit_Click);
             // 
             // aboutToolStripMenuItem
             // 
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(48, 20);
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(54, 20);
             this.aboutToolStripMenuItem.Text = "&About";
             this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 
@@ -631,6 +606,16 @@
             this.tmrExecTimeout.Interval = 1000;
             this.tmrExecTimeout.Tick += new System.EventHandler(this.tmrExecTimeout_Tick);
             // 
+            // cbDotNetVersionList
+            // 
+            this.cbDotNetVersionList.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbDotNetVersionList.FormattingEnabled = true;
+            this.cbDotNetVersionList.Location = new System.Drawing.Point(248, 7);
+            this.cbDotNetVersionList.Name = "cbDotNetVersionList";
+            this.cbDotNetVersionList.Size = new System.Drawing.Size(147, 22);
+            this.cbDotNetVersionList.TabIndex = 12;
+            this.cbDotNetVersionList.SelectedIndexChanged += new System.EventHandler(this.cbDotNetVersionList_SelectedIndexChanged);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 14F);
@@ -640,14 +625,15 @@
             this.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
-            this.MinimumSize = new System.Drawing.Size(640, 36);
+            this.MinimumSize = new System.Drawing.Size(640, 39);
             this.Name = "Form1";
-            this.Text = "Mini C# Lab Ver 1.3";
-            this.Load += new System.EventHandler(this.Form1_Load);
+            this.Text = "Mini C# Lab Ver 1.4.1";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel2.ResumeLayout(false);
             this.splitContainer1.Panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
             this.splitContainer1.ResumeLayout(false);
             this.gbCode.ResumeLayout(false);
             this.codeContextMenuStrip.ResumeLayout(false);
@@ -688,8 +674,6 @@
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
         private System.Windows.Forms.SaveFileDialog saveFileDialog1;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
-        private System.Windows.Forms.RadioButton rbNET35;
-        private System.Windows.Forms.RadioButton rbNET20;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel1;
@@ -724,6 +708,7 @@
         private System.Windows.Forms.ToolStripSeparator toolStripMenuItem2;
         private System.Windows.Forms.ToolStripMenuItem copyAsToolStripMenuItem;
         private System.Windows.Forms.Timer tmrExecTimeout;
+        private System.Windows.Forms.ComboBox cbDotNetVersionList;
     }
 }
 

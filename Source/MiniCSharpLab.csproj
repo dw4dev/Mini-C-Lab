@@ -70,6 +70,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="wfListItem.cs" />
     <EmbeddedResource Include="CodeTemplate.cs" />
     <Compile Include="FormatCodeHtml.cs">
       <SubType>Form</SubType>
